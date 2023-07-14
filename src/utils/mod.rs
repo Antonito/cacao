@@ -12,7 +12,9 @@ use objc_id::ShareId;
 
 use crate::foundation::{id, BOOL, NO, YES};
 
+#[cfg(feature = "appkit")]
 mod cell_factory;
+#[cfg(feature = "appkit")]
 pub use cell_factory::CellFactory;
 
 pub mod os;

@@ -116,6 +116,7 @@ pub mod button;
 #[cfg_attr(docsrs, doc(cfg(feature = "cloudkit")))]
 pub mod cloudkit;
 
+#[cfg(feature = "appkit")]
 pub mod color;
 
 #[cfg(any(feature = "appkit", feature = "uikit"))]
@@ -146,7 +147,9 @@ pub(crate) mod invoker;
 
 pub mod keys;
 
+#[cfg(feature = "appkit")]
 pub mod layer;
+#[cfg(feature = "appkit")]
 pub mod layout;
 
 #[cfg(feature = "appkit")]
@@ -170,6 +173,7 @@ pub mod switch;
 #[cfg(feature = "appkit")]
 pub mod select;
 
+#[cfg(feature = "appkit")]
 pub mod text;
 
 #[cfg(feature = "quicklook")]
@@ -181,8 +185,10 @@ pub mod quicklook;
 pub mod user_notifications;
 
 pub mod user_activity;
+
 pub mod utils;
 
+#[cfg(feature = "appkit")]
 pub mod view;
 
 #[cfg(any(feature = "webview", doc))]

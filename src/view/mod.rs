@@ -58,10 +58,7 @@ use crate::layout::{LayoutAnchorDimension, LayoutAnchorX, LayoutAnchorY, SafeAre
 #[cfg(feature = "appkit")]
 use crate::pasteboard::PasteboardType;
 
-#[cfg(all(feature = "appkit", target_os = "macos"))]
 mod animator;
-
-#[cfg(all(feature = "appkit", target_os = "macos"))]
 pub use animator::ViewAnimatorProxy;
 
 #[cfg_attr(feature = "appkit", path = "appkit.rs")]

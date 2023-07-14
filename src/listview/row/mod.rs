@@ -56,7 +56,8 @@ use crate::layout::Layout;
 use crate::objc_access::ObjcAccess;
 use crate::utils::properties::ObjcProperty;
 #[cfg(all(feature = "appkit", target_os = "macos"))]
-use crate::view::{ViewAnimatorProxy, ViewDelegate};
+use crate::view::ViewAnimatorProxy;
+use crate::view::ViewDelegate;
 
 #[cfg(feature = "autolayout")]
 use crate::layout::{LayoutAnchorDimension, LayoutAnchorX, LayoutAnchorY, SafeAreaLayoutGuide};
